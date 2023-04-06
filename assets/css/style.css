@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Pacifico&family=Roboto+Condensed:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 100000;
+}
+
+header.sticky {
+  padding: 5px 100px;
+  background: #fff;
+}
+
+header .logo {
+  position: relative;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+
+header ul {
+  list-style: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+}
+
+.container {
+  background: #3494e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ec6ead, #3494e6); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ec6ead, #3494e6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: #fafafa;
+  padding: 8px 15px;
+  border-radius: 50px;
+  flex-basis: auto;
+}
+
+.search-box .search-icon {
+  font-size: 0.5rem;
+  background: linear-gradient(to right, darkblue, darkorchid);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.search-box .search-icon:hover {
+  cursor: pointer;
+  background: linear-gradient(to right, #f857a6, #ff5858);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.search-box .cancel-icon {
+  font-size: 0.5rem;
+  background: linear-gradient(to right, darkblue, darkorchid);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.search-box .cancel-icon:hover {
+  cursor: pointer;
+  background: linear-gradient(to right, #c21500, #ffc500);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.search-box .search-input {
+  transition: 0.5s;
+  width: 0;
+  overflow: hidden;
+}
+
+.search-box:hover {
+  padding-right: 15px;
+  transition: 5s;
+}
+
+.search-box:hover .search-input {
+  width: 200px;
+  margin-left: 8px;
+  overflow: visible;
+}
+
+.search-input .input {
+  border: none;
+  outline: none;
+  background-color: unset;
+  padding: 8px;
+  font-weight: 400;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+  color: #000;
+}
+
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
